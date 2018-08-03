@@ -9,7 +9,9 @@
   "dependencies": {
     "react": "16.0.0-alpha.12",
     "react-native": "0.55.0",
+    "react-native-exception-handler": "^2.9.0",
     "react-native-navigation": "git+https://github.com/GorshkovNikita/react-native-navigation.git",
+    "react-native-yandex-checkout": "^0.2.18",
     "react-redux": "^5.0.7",
     "redux": "^4.0.0",
     "redux-thunk": "^2.3.0"

@@ -5,6 +5,25 @@ import { createStore, applyMiddleware } from 'redux';
 import ReduxThunk from 'redux-thunk';
 import { Provider } from 'react-redux';
 import { registerScreens } from './screens';
+import Checkout from 'react-native-yandex-checkout';
+import {setNativeExceptionHandler} from 'react-native-exception-handler';
+
+setNativeExceptionHandler((exceptionString) => {
+    console.log(exceptionString);
+});
+
+// const name = Checkout.getName();
+// const constants = Checkout.getConstants();
+// console.log('!!!!!!!!!!');
+// console.log(name);
+// console.log(constants);
+// console.log(Checkout);
+
+
+
+// Checkout.attach();
+
+
 
 const store = createStore(() => {}, {}, applyMiddleware(ReduxThunk));
 registerScreens(store, Provider);
