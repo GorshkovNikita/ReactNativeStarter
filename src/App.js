@@ -12,19 +12,6 @@ setNativeExceptionHandler((exceptionString) => {
     console.log(exceptionString);
 });
 
-// const name = Checkout.getName();
-// const constants = Checkout.getConstants();
-// console.log('!!!!!!!!!!');
-// console.log(name);
-// console.log(constants);
-// console.log(Checkout);
-
-
-
-// Checkout.attach();
-
-
-
 const store = createStore(() => {}, {}, applyMiddleware(ReduxThunk));
 registerScreens(store, Provider);
 // live_s_Pt9I-pZyjbJmAehU8kTt3av_2feEusu0dzWG6QBTo
